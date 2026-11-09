@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anand Shakya | Computer Science &amp; Data Science Student</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Personal portfolio of Anand Shakya, third-year B.Tech CSE (Data Science) student at Maharishi University of Information Technology. Aspiring Software Developer &amp; Data Science Enthusiast.">
+  <meta name="author" content="Anand Shakya">
+  <meta name="keywords" content="Anand Shakya, Portfolio, Computer Science, Data Science, B.Tech, Python, Java, SQL, Software Development, Web Development">
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Anand Shakya | Computer Science &amp; Data Science Student">
+  <meta property="og:description" content="Building practical software and exploring data-driven solutions. Third-year B.Tech Computer Science and Data Science student.">
+  <meta property="og:image" content="assets/anand-shakya.jpg">
+  <meta property="og:url" content="https://github.com/anandshakya285">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="assets/anand-shakya.jpg">
+
+  <!-- Structured Data (JSON-LD) for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Anand Shakya",
+    "image": "assets/anand-shakya.jpg",
+    "jobTitle": "Computer Science & Data Science Student",
+    "description": "Aspiring Software Developer and Data Science Enthusiast pursuing B.Tech in CSE (Data Science) at Maharishi University of Information Technology.",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Maharishi University of Information Technology"
+    },
+    "knowsAbout": ["Python", "Java", "SQL", "Software Engineering", "Data Structures", "Data Science"],
+    "sameAs": [
+      "https://github.com/anandshakya285",
+      "https://www.linkedin.com/in/anand-shakya-a42053304/"
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts Preconnect & Inter / Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Anand Shakya Home">
+        <span class="logo-mark">AS</span>
+        <div class="logo-text">
+          <span class="logo-name">Anand Shakya</span>
+          <span class="logo-sub">CS &amp; Data Science</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-links" id="nav-links" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="btn-icon theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Availability Badge Link -->
+        <a href="#contact" class="status-pill status-pill-header" title="Currently seeking internships">
+          <span class="status-indicator-dot"></span>
+          <span class="status-pill-text">Open to Internships</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-toggle" class="btn-icon mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg class="menu-open-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="menu-close-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#education" class="mobile-nav-link">Education</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+      </nav>
+      <div class="mobile-drawer-socials">
+        <a href="https://github.com/anandshakya285" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/anand-shakya-a42053304/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Availability Tag -->
+          <div class="badge-wrapper">
+            <span class="status-pill status-pill-hero">
+              <span class="status-indicator-dot"></span>
+              <span>Open to Internship Opportunities</span>
+            </span>
+            <span class="location-pill">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              India
+            </span>
+          </div>
+
+          <!-- Professional Headline -->
+          <h1 class="hero-title">Computer Science &amp; Data Science Student.</h1>
+
+          <!-- Subheadline & Supporting Heading -->
+          <p class="hero-subheadline">Aspiring Software Developer | Data Science Enthusiast</p>
+          <p class="hero-supporting">Building practical software and exploring data-driven solutions.</p>
+
+          <!-- Introduction -->
+          <p class="hero-intro">
+            I am a third-year B.Tech Computer Science and Data Science student interested in software development, databases, and data analysis. I enjoy learning new technologies and building practical applications that solve real-world problems.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              Explore Projects
+            </a>
+            <a href="#about" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              About Me
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Get in Touch
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-social-links">
+            <span class="social-label">Profiles:</span>
+            <a href="https://github.com/anandshakya285" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="Anand Shakya GitHub Profile">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+              <svg class="external-arrow" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17l9.2-9.2M17 17V8H8"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/anand-shakya-a42053304/" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="Anand Shakya LinkedIn Profile">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>LinkedIn</span>
+              <svg class="external-arrow" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17l9.2-9.2M17 17V8H8"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual Card -->
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="card-glow-bg"></div>
+            <div class="avatar-container">
+              <div class="avatar-ring">
+                <img src="assets/anand-shakya.jpg" alt="Anand Shakya" class="avatar-img">
+              </div>
+              <div class="avatar-badge" title="Open to Opportunities">
+                <span class="status-indicator-dot"></span>
+              </div>
+            </div>
+            <div class="profile-card-body">
+              <h3 class="profile-name">Anand Shakya</h3>
+              <p class="profile-role">B.Tech CSE (Data Science)</p>
+              <p class="profile-uni">Maharishi University of Information Technology</p>
+              <div class="profile-tags">
+                <span class="ptag">Third Year</span>
+                <span class="ptag">Class of 2028</span>
+                <span class="ptag">India</span>
+              </div>
+              <div class="profile-focus">
+                <div class="focus-item">
+                  <span class="focus-dot dot-blue"></span>
+                  <span>Software Development</span>
+                </div>
+                <div class="focus-item">
+                  <span class="focus-dot dot-purple"></span>
+                  <span>RDBMS &amp; Databases</span>
+                </div>
+                <div class="focus-item">
+                  <span class="focus-dot dot-cyan"></span>
+                  <span>Data Science Foundations</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Background</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">My academic focus, current projects, and practical philosophy</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Content -->
+          <div class="about-narrative">
+            <div class="narrative-card">
+              <p class="narrative-paragraph">
+                Hello! I'm Anand Shakya, a third-year B.Tech student pursuing Computer Science and Engineering with a specialization in Data Science at Maharishi University of Information Technology, with an expected graduation year of 2028.
+              </p>
+              <p class="narrative-paragraph">
+                I'm interested in software development, data science, databases, and problem-solving. I enjoy exploring how technology can solve practical, real-world problems and am continuously working on strengthening my programming and computer science fundamentals.
+              </p>
+              <p class="narrative-paragraph">
+                One of my current projects is <strong>Ojas Apparels</strong>, a garment business management system designed around real-world shirt manufacturing and wholesale business workflows. I have also completed a <strong>Student Management System</strong> as part of my Software Engineering academic project.
+              </p>
+              <p class="narrative-paragraph">
+                I believe in learning by building, improving through practical experience, and developing solutions that are useful beyond the classroom.
+              </p>
+              <div class="narrative-callout">
+                <div class="callout-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 14 14"></polyline>
+                  </svg>
+                </div>
+                <p class="callout-text">
+                  I'm currently looking for internship opportunities where I can contribute, learn from experienced developers, and grow as a software professional.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Fact Sidebar -->
+          <div class="about-sidebar">
+            <div class="fact-card">
+              <h3 class="fact-card-title">Profile Summary</h3>
+              <ul class="fact-list">
+                <li class="fact-item">
+                  <span class="fact-label">Full Name</span>
+                  <span class="fact-value">Anand Shakya</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Degree</span>
+                  <span class="fact-value">B.Tech in CSE</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Specialization</span>
+                  <span class="fact-value">Data Science</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Institution</span>
+                  <span class="fact-value">Maharishi University of Information Technology</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Academic Status</span>
+                  <span class="fact-value">Third Year (Batch 2024–2028)</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Expected Graduation</span>
+                  <span class="fact-value">2028</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Location</span>
+                  <span class="fact-value">India</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Availability</span>
+                  <span class="fact-value availability-highlight">Open to Internships</span>
+                </li>
+              </ul>
+              <div class="fact-card-footer">
+                <a href="#contact" class="btn btn-outline btn-full btn-sm">Connect With Anand</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Journey</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Verified formal degree and university background</p>
+        </div>
+
+        <div class="education-card-container">
+          <div class="education-card">
+            <div class="edu-header">
+              <div class="edu-badge-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="edu-title-group">
+                <span class="edu-timeframe">Third Year • Expected Graduation: 2028</span>
+                <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+                <h4 class="edu-branch">Computer Science and Engineering — Data Science</h4>
+                <p class="edu-institution">Maharishi University of Information Technology</p>
+              </div>
+            </div>
+
+            <div class="edu-divider"></div>
+
+            <div class="edu-body">
+              <h5 class="edu-subhead">Core Curriculum &amp; Academic Focus Areas:</h5>
+              <div class="curriculum-grid">
+                <div class="curriculum-item">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Software Engineering &amp; System Design Principles</span>
+                </div>
+                <div class="curriculum-item">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Data Structures &amp; Algorithms Fundamentals</span>
+                </div>
+                <div class="curriculum-item">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Relational Database Management Systems (RDBMS) &amp; SQL</span>
+                </div>
+                <div class="curriculum-item">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Statistics &amp; Data Science Methodologies</span>
+                </div>
+                <div class="curriculum-item">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Computer Networks &amp; Protocols</span>
+                </div>
+                <div class="curriculum-item">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Cyber Security Core Concepts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Competencies</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Real, honest skill proficiencies without inflated percentages</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. Programming -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-box icon-programming">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Programming</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-name">Python</span>
+                <span class="skill-level-tag tag-beginner">Beginner</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Java</span>
+                <span class="skill-level-tag tag-beginner">Beginner</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Database -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-box icon-database">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Database</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-name">SQL</span>
+                <span class="skill-level-tag tag-beginner">Beginner</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">RDBMS Fundamentals</span>
+                <span class="skill-level-tag tag-fundamentals">Fundamentals</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Computer Science -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-box icon-cs">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Computer Science</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-name">Object-Oriented Programming</span>
+                <span class="skill-level-tag tag-fundamentals">Fundamentals</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Data Structures &amp; Algorithms</span>
+                <span class="skill-level-tag tag-fundamentals">Fundamentals</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Data Science -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-box icon-ds">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Data Science</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-name">Statistics</span>
+                <span class="skill-level-tag tag-academic">Academic</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Exploratory Data Analysis</span>
+                <span class="skill-level-tag tag-academic">Academic Learning</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Academic Knowledge -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-box icon-academic">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Academic Knowledge</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-name">Software Engineering</span>
+                <span class="skill-level-tag tag-academic">Coursework</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Computer Networks</span>
+                <span class="skill-level-tag tag-academic">Coursework</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Cyber Security</span>
+                <span class="skill-level-tag tag-academic">Coursework</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Currently Learning -->
+          <div class="skill-category-card card-learning-active">
+            <div class="skill-card-header">
+              <div class="skill-icon-box icon-learning">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Currently Learning</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-name">HTML</span>
+                <span class="skill-level-tag tag-learning">In Progress</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">CSS</span>
+                <span class="skill-level-tag tag-learning">In Progress</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-level-tag tag-learning">In Progress</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Git and GitHub</span>
+                <span class="skill-level-tag tag-learning">In Progress</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Applied Work</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Real practical implementations and verified academic projects</p>
+        </div>
+
+        <div class="projects-list">
+          <!-- PROJECT 01: Ojas Apparels -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-header-left">
+                <span class="project-number">PROJECT 01</span>
+                <div class="project-title-row">
+                  <h3 class="project-name">Ojas Apparels</h3>
+                  <span class="status-badge badge-warning">
+                    <span class="status-dot-pulse pulse-warning"></span>
+                    In Development
+                  </span>
+                </div>
+                <h4 class="project-subtitle">Garment Business Management System</h4>
+              </div>
+              <div class="project-focus-tag">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                Focus: Real-world Business Workflow Automation
+              </div>
+            </div>
+
+            <div class="project-description-block">
+              <p class="project-desc">
+                "A business management solution designed for shirt manufacturing and wholesale operations, focusing on product management, size-wise inventory, production workflows, job-work tracking, customer management, sales orders, invoicing, and payment records."
+              </p>
+            </div>
+
+            <!-- Transparency / Important Note Banner -->
+            <div class="project-transparency-note">
+              <div class="transparency-icon">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+              </div>
+              <p class="transparency-text">
+                <strong>Project Status:</strong> This project is currently undergoing active functionality improvements, workflow refinement, and testing. It represents a hands-on exploration of real-world business systems rather than a commercial production release.
+              </p>
+            </div>
+
+            <!-- Implemented Features Checklist -->
+            <div class="project-features-section">
+              <h5 class="features-title">Verified Implemented &amp; Tested Features:</h5>
+              <div class="feature-badges-grid">
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Size-Wise Collar Inventory (38, 40, 42, 44, 46)</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Production Job-Work &amp; Tailor Tracking</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Customer Ledger &amp; Credit Limits</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Wholesale Orders &amp; Strict Payment Check Gate</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>GST Tax Invoicing &amp; Print-Ready A4 Format</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Categorized Expenses &amp; GAAP Profit Calculation</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tech Stack & Workflow Modal Trigger -->
+            <div class="project-footer">
+              <div class="tech-stack-row">
+                <span class="tech-label">Architecture:</span>
+                <div class="tech-chips">
+                  <span class="tech-chip">Next.js 14</span>
+                  <span class="tech-chip">TypeScript</span>
+                  <span class="tech-chip">Tailwind CSS</span>
+                  <span class="tech-chip">SQLite</span>
+                  <span class="tech-chip">Prisma ORM</span>
+                  <span class="tech-chip">Electron</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-secondary btn-sm" onclick="openWorkflowModal('ojas')">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                  View Workflow Architecture
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: Student Management System -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-header-left">
+                <span class="project-number">PROJECT 02</span>
+                <div class="project-title-row">
+                  <h3 class="project-name">Student Management System</h3>
+                  <span class="status-badge badge-success">
+                    <span class="status-dot-pulse pulse-success"></span>
+                    Completed Academic Project
+                  </span>
+                </div>
+                <h4 class="project-subtitle">Academic Software Engineering Project</h4>
+              </div>
+              <div class="project-focus-tag">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+                Curriculum: B.Tech Software Engineering
+              </div>
+            </div>
+
+            <div class="project-description-block">
+              <p class="project-desc">
+                "An academic software engineering project developed as part of my B.Tech curriculum, focused on a Student Management System."
+              </p>
+            </div>
+
+            <!-- Implemented Features Checklist -->
+            <div class="project-features-section">
+              <h5 class="features-title">Verified Source Implementation Details:</h5>
+              <div class="feature-badges-grid">
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Tkinter GUI for intuitive desktop navigation</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Student record addition &amp; input validation</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Record search by student name or roll number</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Full student profile update &amp; modification</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Safe record deletion with confirmation dialogs</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>SQLite database persistence (automatic schema init)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tech Stack & Modal Trigger -->
+            <div class="project-footer">
+              <div class="tech-stack-row">
+                <span class="tech-label">Technologies:</span>
+                <div class="tech-chips">
+                  <span class="tech-chip">Python</span>
+                  <span class="tech-chip">Tkinter GUI</span>
+                  <span class="tech-chip">SQLite</span>
+                  <span class="tech-chip">Desktop Architecture</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-secondary btn-sm" onclick="openWorkflowModal('student')">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                  View System Architecture
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Planned Initiatives Disclaimer (Exploratory Data Analysis Project kept strictly distinct from completed showcase) -->
+        <div class="planned-initiatives-box">
+          <div class="planned-header">
+            <span class="status-badge badge-neutral">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="6" x2="12" y2="12"></line>
+                <line x1="12" y1="12" x2="16" y2="14"></line>
+              </svg>
+              Academic Roadmap
+            </span>
+            <span class="planned-title">Upcoming: Exploratory Data Analysis Project (Planned)</span>
+          </div>
+          <p class="planned-text">
+            In accordance with my Data Science specialization curriculum, an applied Exploratory Data Analysis project is currently in the conceptual and planning phase. Following honest portfolio standards, it will be added to the showcase only once implementation and evaluation are complete.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">Let's connect for internship opportunities and collaborative learning</p>
+        </div>
+
+        <div class="contact-card-wrapper">
+          <div class="contact-main-card">
+            <!-- Professional Message Box -->
+            <div class="contact-statement">
+              <div class="statement-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <blockquote class="statement-quote">
+                "I'm open to internship opportunities, collaborative projects, and opportunities to learn and contribute to real-world software development."
+              </blockquote>
+            </div>
+
+            <div class="contact-channels-grid">
+              <!-- LinkedIn Card -->
+              <a href="https://www.linkedin.com/in/anand-shakya-a42053304/" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+                <div class="channel-icon-box channel-linkedin">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">Professional Network</span>
+                  <span class="channel-title">LinkedIn Profile</span>
+                  <span class="channel-link">linkedin.com/in/anand-shakya-a42053304</span>
+                </div>
+                <div class="channel-action">
+                  <span class="btn btn-outline btn-sm">Connect</span>
+                </div>
+              </a>
+
+              <!-- GitHub Card -->
+              <a href="https://github.com/anandshakya285" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+                <div class="channel-icon-box channel-github">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">Source Code &amp; Repositories</span>
+                  <span class="channel-title">GitHub Profile</span>
+                  <span class="channel-link">github.com/anandshakya285</span>
+                </div>
+                <div class="channel-action">
+                  <span class="btn btn-outline btn-sm">Follow</span>
+                </div>
+              </a>
+
+              <!-- Location Info Box -->
+              <div class="contact-channel-card location-card">
+                <div class="channel-icon-box channel-location">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">Base Location</span>
+                  <span class="channel-title">India</span>
+                  <span class="channel-link">Open to Remote &amp; On-Site Internships</span>
+                </div>
+                <div class="channel-action">
+                  <span class="status-pill status-pill-sm">
+                    <span class="status-indicator-dot"></span>
+                    Available
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Inquiry Copy Helper -->
+            <div class="inquiry-helper-card">
+              <div class="inquiry-header">
+                <div>
+                  <h4 class="inquiry-title">Quick Outreach Template</h4>
+                  <p class="inquiry-sub">Recruiters and collaborators can copy this ready message to reach out on LinkedIn:</p>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm" id="copy-message-btn" onclick="copyOutreachMessage()">
+                  <svg id="copy-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span id="copy-btn-text">Copy Outreach Message</span>
+                </button>
+              </div>
+              <pre class="inquiry-box" id="outreach-template">Hi Anand, I came across your portfolio highlighting your B.Tech CSE (Data Science) studies at Maharishi University of Information Technology and your work on Ojas Apparels and the Student Management System. We'd like to discuss internship opportunities with you.</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- WORKFLOW ARCHITECTURE MODAL -->
+  <div class="modal-overlay" id="workflow-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-badge" id="modal-badge">Architecture Overview</span>
+          <h3 class="modal-title" id="modal-title">Project Architecture</h3>
+        </div>
+        <button type="button" class="modal-close-btn" aria-label="Close modal" onclick="closeWorkflowModal()">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Dynamic Content Injected via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p class="footer-copy">
+          &copy; <span id="current-year">2026</span> Anand Shakya • Computer Science &amp; Data Science Student
+        </p>
+        <p class="footer-subtext">
+          Maharishi University of Information Technology • Expected Graduation: 2028
+        </p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-socials">
+          <a href="https://github.com/anandshakya285" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="GitHub Profile">
+            GitHub
+          </a>
+          <span class="footer-dot">•</span>
+          <a href="https://www.linkedin.com/in/anand-shakya-a42053304/" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="LinkedIn Profile">
+            LinkedIn
+          </a>
+          <span class="footer-dot">•</span>
+          <a href="#hero" class="footer-link back-to-top">
+            Back to Top ↑
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
