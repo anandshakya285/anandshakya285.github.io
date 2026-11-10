@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anand Shakya | Computer Science &amp; Data Science Student</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Personal portfolio of Anand Shakya, third-year B.Tech CSE (Data Science) student at Maharishi University of Information Technology. Aspiring Software Developer &amp; Data Science Enthusiast.">
+  <meta name="author" content="Anand Shakya">
+  <meta name="keywords" content="Anand Shakya, Portfolio, Computer Science, Data Science, B.Tech, Python, Java, SQL, Software Development, Web Development">
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Anand Shakya | Computer Science &amp; Data Science Student">
+  <meta property="og:description" content="Building practical software and exploring data-driven solutions. Third-year B.Tech Computer Science and Data Science student.">
+  <meta property="og:image" content="anand-shakya.jpg">
+  <meta property="og:url" content="https://github.com/anandshakya285">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="anand-shakya.jpg">
+
+  <!-- Structured Data (JSON-LD) for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Anand Shakya",
+    "image": "anand-shakya.jpg",
+    "jobTitle": "Computer Science & Data Science Student",
+    "description": "Aspiring Software Developer and Data Science Enthusiast pursuing B.Tech in CSE (Data Science) at Maharishi University of Information Technology.",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Maharishi University of Information Technology"
+    },
+    "knowsAbout": ["Python", "Java", "SQL", "Software Engineering", "Data Structures", "Data Science"],
+    "sameAs": [
+      "https://github.com/anandshakya285",
+      "https://www.linkedin.com/in/anand-shakya-a42053304/"
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts Preconnect & Inter / Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Anand Shakya Home">
+        <span class="logo-mark">AS</span>
+        <div class="logo-text">
+          <span class="logo-name">Anand Shakya</span>
+          <span class="logo-sub">CS &amp; Data Science</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-links" id="nav-links" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="btn-icon theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Availability Badge Link -->
+        <a href="#contact" class="status-pill status-pill-header" title="Currently seeking internships">
+          <span class="status-indicator-dot"></span>
+          <span class="status-pill-text">Open to Internships</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-toggle" class="btn-icon mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg class="menu-open-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="menu-close-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#education" class="mobile-nav-link">Education</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+      </nav>
+      <div class="mobile-drawer-socials">
+        <a href="https://github.com/anandshakya285" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/anand-shakya-a42053304/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Availability Tag -->
+          <div class="badge-wrapper">
+            <span class="status-pill status-pill-hero">
+              <span class="status-indicator-dot"></span>
+              <span>Open to Internship Opportunities</span>
+            </span>
+            <span class="location-pill">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              India
+            </span>
+          </div>
+
+          <!-- Professional Headline -->
+          <h1 class="hero-title">Computer Science &amp; Data Science Student.</h1>
+
+          <!-- Subheadline & Supporting Heading -->
+          <p class="hero-subheadline">Aspiring Software Developer | Data Science Enthusiast</p>
+          <p class="hero-supporting">Building practical software and exploring data-driven solutions.</p>
+
+          <!-- Introduction -->
+          <p class="hero-intro">
+            I am a third-year B.Tech Computer Science and Data Science student interested in software development, databases, and data analysis. I enjoy learning new technologies and building practical applications that solve real-world problems.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              Explore Projects
+            </a>
+            <a href="#about" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              About Me
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Get in Touch
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-social-links">
+            <span class="social-label">Profiles:</span>
+            <a href="https://github.com/anandshakya285" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="Anand Shakya GitHub Profile">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+              <svg class="external-arrow" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17l9.2-9.2M17 17V8H8"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/anand-shakya-a42053304/" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="Anand Shakya LinkedIn Profile">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>LinkedIn</span>
+              <svg class="external-arrow" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17l9.2-9.2M17 17V8H8"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual Card -->
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="card-glow-bg"></div>
+            <div class="avatar-container">
+              <div class="avatar-ring">
+                <img src="data:image/jpeg;base64,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" alt="Anand Shakya" class="avatar-img">
+              </div>
+              <div class="avatar-badge" title="Open to Opportunities">
+                <span class="status-indicator-dot"></span>
+              </div>
+            </div>
+            <div class="profile-card-body">
+              <h3 class="profile-name">Anand Shakya</h3>
+              <p class="profile-role">B.Tech CSE (Data Science)</p>
+              <p class="profile-uni">Maharishi University of Information Technology</p>
+              <div class="profile-tags">
+                <span class="ptag">Third Year</span>
+                <span class="ptag">Class of 2028</span>
+                <span class="ptag">India</span>
+              </div>
+              <div class="profile-focus">
+                <div class="focus-item">
+                  <span class="focus-dot dot-blue"></span>
+                  <span>Software Development</span>
+                </div>
+                <div class="focus-item">
+                  <span class="focus-dot dot-purple"></span>
+                  <span>RDBMS &amp; Databases</span>
+                </div>
+                <div class="focus-item">
+                  <span class="focus-dot dot-cyan"></span>
+                  <span>Data Science Foundations</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Background</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">My academic focus, current projects, and practical philosophy</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Content -->
+          <div class="about-narrative">
+            <div class="narrative-card">
+              <p class="narrative-paragraph">
+                Hello! I'm Anand Shakya, a third-year B.Tech student pursuing Computer Science and Engineering with a specialization in Data Science at Maharishi University of Information Technology, with an expected graduation year of 2028.
+              </p>
+              <p class="narrative-paragraph">
+                I'm interested in software development, data science, databases, and problem-solving. I enjoy exploring how technology can solve practical, real-world problems and am continuously working on strengthening my programming and computer science fundamentals.
+              </p>
+              <p class="narrative-paragraph">
+                One of my current projects is <strong>Ojas Apparels</strong>, a garment business management system designed around real-world shirt manufacturing and wholesale business workflows. I have also completed a <strong>Student Management System</strong> as part of my Software Engineering academic project.
+              </p>
+              <p class="narrative-paragraph">
+                I believe in learning by building, improving through practical experience, and developing solutions that are useful beyond the classroom.
+              </p>
+              <div class="narrative-callout">
+                <div class="callout-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 14 14"></polyline>
+                  </svg>
+                </div>
+                <p class="callout-text">
+                  I'm currently looking for internship opportunities where I can contribute, learn from experienced developers, and grow as a software professional.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Fact Sidebar -->
+          <div class="about-sidebar">
+            <div class="fact-card">
+              <h3 class="fact-card-title">Profile Summary</h3>
+              <ul class="fact-list">
+                <li class="fact-item">
+                  <span class="fact-label">Full Name</span>
+                  <span class="fact-value">Anand Shakya</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Degree</span>
+                  <span class="fact-value">B.Tech in CSE</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Specialization</span>
+                  <span class="fact-value">Data Science</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Institution</span>
+                  <span class="fact-value">Maharishi University of Information Technology</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Academic Status</span>
+                  <span class="fact-value">Third Year (Batch 2024–2028)</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Expected Graduation</span>
+                  <span class="fact-value">2028</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Location</span>
+                  <span class="fact-value">India</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Availability</span>
+                  <span class="fact-value availability-highlight">Open to Internships</span>
+                </li>
+              </ul>
+              <div class="fact-card-footer">
+                <a href="#contact" class="btn btn-outline btn-full btn-sm">Connect With Anand</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Journey</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Verified formal degree and university background</p>
+        </div>
+
+        <div class="education-card-container">
+          <div class="education-card">
+            <div class="edu-header">
+              <div class="edu-badge-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="edu-title-group">
+                <span class="edu-timeframe">Third Year • Expected Graduation: 2028</span>
+                <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+                <h4 class="edu-branch">Computer Science and Engineering — Data Science</h4>
+                <p class="edu-institution">Maharishi University of Information Technology</p>
+              </div>
+            </div>
+
+            <div class="edu-divider"></div>
+
+            <div class="edu-body">
+              <h5 class="edu-subhead">Core Curriculum &amp; Academic Focus Areas:</h5>
+              <div class="curriculum-grid">
+                <div class="curriculum-item">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Software Engineering &amp; System Design Principles</span>
+                </div>
+                <div class="curriculum-item">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Data Structures &amp; Algorithms Fundamentals</span>
+                </div>
+                <div class="curriculum-item">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Relational Database Management Systems (RDBMS) &amp; SQL</span>
+                </div>
+                <div class="curriculum-item">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Statistics &amp; Data Science Methodologies</span>
+                </div>
+                <div class="curriculum-item">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Computer Networks &amp; Protocols</span>
+                </div>
+                <div class="curriculum-item">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Cyber Security Core Concepts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Competencies</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Real, honest skill proficiencies without inflated percentages</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. Programming -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-box icon-programming">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Programming</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-name">Python</span>
+                <span class="skill-level-tag tag-beginner">Beginner</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Java</span>
+                <span class="skill-level-tag tag-beginner">Beginner</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Database -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-box icon-database">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Database</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-name">SQL</span>
+                <span class="skill-level-tag tag-beginner">Beginner</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">RDBMS Fundamentals</span>
+                <span class="skill-level-tag tag-fundamentals">Fundamentals</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Computer Science -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-box icon-cs">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Computer Science</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-name">Object-Oriented Programming</span>
+                <span class="skill-level-tag tag-fundamentals">Fundamentals</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Data Structures &amp; Algorithms</span>
+                <span class="skill-level-tag tag-fundamentals">Fundamentals</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Data Science -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-box icon-ds">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Data Science</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-name">Statistics</span>
+                <span class="skill-level-tag tag-academic">Academic</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Exploratory Data Analysis</span>
+                <span class="skill-level-tag tag-academic">Academic Learning</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Academic Knowledge -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-box icon-academic">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Academic Knowledge</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-name">Software Engineering</span>
+                <span class="skill-level-tag tag-academic">Coursework</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Computer Networks</span>
+                <span class="skill-level-tag tag-academic">Coursework</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Cyber Security</span>
+                <span class="skill-level-tag tag-academic">Coursework</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Currently Learning -->
+          <div class="skill-category-card card-learning-active">
+            <div class="skill-card-header">
+              <div class="skill-icon-box icon-learning">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Currently Learning</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-pill">
+                <span class="skill-name">HTML</span>
+                <span class="skill-level-tag tag-learning">In Progress</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">CSS</span>
+                <span class="skill-level-tag tag-learning">In Progress</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-level-tag tag-learning">In Progress</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Git and GitHub</span>
+                <span class="skill-level-tag tag-learning">In Progress</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Applied Work</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Real practical implementations and verified academic projects</p>
+        </div>
+
+        <div class="projects-list">
+          <!-- PROJECT 01: Ojas Apparels -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-header-left">
+                <span class="project-number">PROJECT 01</span>
+                <div class="project-title-row">
+                  <h3 class="project-name">Ojas Apparels</h3>
+                  <span class="status-badge badge-warning">
+                    <span class="status-dot-pulse pulse-warning"></span>
+                    In Development
+                  </span>
+                </div>
+                <h4 class="project-subtitle">Garment Business Management System</h4>
+              </div>
+              <div class="project-focus-tag">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                Focus: Real-world Business Workflow Automation
+              </div>
+            </div>
+
+            <div class="project-description-block">
+              <p class="project-desc">
+                "A business management solution designed for shirt manufacturing and wholesale operations, focusing on product management, size-wise inventory, production workflows, job-work tracking, customer management, sales orders, invoicing, and payment records."
+              </p>
+            </div>
+
+            <!-- Transparency / Important Note Banner -->
+            <div class="project-transparency-note">
+              <div class="transparency-icon">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+              </div>
+              <p class="transparency-text">
+                <strong>Project Status:</strong> This project is currently undergoing active functionality improvements, workflow refinement, and testing. It represents a hands-on exploration of real-world business systems rather than a commercial production release.
+              </p>
+            </div>
+
+            <!-- Implemented Features Checklist -->
+            <div class="project-features-section">
+              <h5 class="features-title">Verified Implemented &amp; Tested Features:</h5>
+              <div class="feature-badges-grid">
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Size-Wise Collar Inventory (38, 40, 42, 44, 46)</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Production Job-Work &amp; Tailor Tracking</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Customer Ledger &amp; Credit Limits</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Wholesale Orders &amp; Strict Payment Check Gate</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>GST Tax Invoicing &amp; Print-Ready A4 Format</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Categorized Expenses &amp; GAAP Profit Calculation</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tech Stack & Workflow Modal Trigger -->
+            <div class="project-footer">
+              <div class="tech-stack-row">
+                <span class="tech-label">Architecture:</span>
+                <div class="tech-chips">
+                  <span class="tech-chip">Next.js 14</span>
+                  <span class="tech-chip">TypeScript</span>
+                  <span class="tech-chip">Tailwind CSS</span>
+                  <span class="tech-chip">SQLite</span>
+                  <span class="tech-chip">Prisma ORM</span>
+                  <span class="tech-chip">Electron</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-secondary btn-sm" onclick="openWorkflowModal('ojas')">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                  View Workflow Architecture
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: Student Management System -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-header-left">
+                <span class="project-number">PROJECT 02</span>
+                <div class="project-title-row">
+                  <h3 class="project-name">Student Management System</h3>
+                  <span class="status-badge badge-success">
+                    <span class="status-dot-pulse pulse-success"></span>
+                    Completed Academic Project
+                  </span>
+                </div>
+                <h4 class="project-subtitle">Academic Software Engineering Project</h4>
+              </div>
+              <div class="project-focus-tag">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+                Curriculum: B.Tech Software Engineering
+              </div>
+            </div>
+
+            <div class="project-description-block">
+              <p class="project-desc">
+                "An academic software engineering project developed as part of my B.Tech curriculum, focused on a Student Management System."
+              </p>
+            </div>
+
+            <!-- Implemented Features Checklist -->
+            <div class="project-features-section">
+              <h5 class="features-title">Verified Source Implementation Details:</h5>
+              <div class="feature-badges-grid">
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Tkinter GUI for intuitive desktop navigation</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Student record addition &amp; input validation</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Record search by student name or roll number</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Full student profile update &amp; modification</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Safe record deletion with confirmation dialogs</span>
+                </div>
+                <div class="feature-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>SQLite database persistence (automatic schema init)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tech Stack & Modal Trigger -->
+            <div class="project-footer">
+              <div class="tech-stack-row">
+                <span class="tech-label">Technologies:</span>
+                <div class="tech-chips">
+                  <span class="tech-chip">Python</span>
+                  <span class="tech-chip">Tkinter GUI</span>
+                  <span class="tech-chip">SQLite</span>
+                  <span class="tech-chip">Desktop Architecture</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-secondary btn-sm" onclick="openWorkflowModal('student')">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                  View System Architecture
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Planned Initiatives Disclaimer (Exploratory Data Analysis Project kept strictly distinct from completed showcase) -->
+        <div class="planned-initiatives-box">
+          <div class="planned-header">
+            <span class="status-badge badge-neutral">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="6" x2="12" y2="12"></line>
+                <line x1="12" y1="12" x2="16" y2="14"></line>
+              </svg>
+              Academic Roadmap
+            </span>
+            <span class="planned-title">Upcoming: Exploratory Data Analysis Project (Planned)</span>
+          </div>
+          <p class="planned-text">
+            In accordance with my Data Science specialization curriculum, an applied Exploratory Data Analysis project is currently in the conceptual and planning phase. Following honest portfolio standards, it will be added to the showcase only once implementation and evaluation are complete.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">Let's connect for internship opportunities and collaborative learning</p>
+        </div>
+
+        <div class="contact-card-wrapper">
+          <div class="contact-main-card">
+            <!-- Professional Message Box -->
+            <div class="contact-statement">
+              <div class="statement-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <blockquote class="statement-quote">
+                "I'm open to internship opportunities, collaborative projects, and opportunities to learn and contribute to real-world software development."
+              </blockquote>
+            </div>
+
+            <div class="contact-channels-grid">
+              <!-- LinkedIn Card -->
+              <a href="https://www.linkedin.com/in/anand-shakya-a42053304/" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+                <div class="channel-icon-box channel-linkedin">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">Professional Network</span>
+                  <span class="channel-title">LinkedIn Profile</span>
+                  <span class="channel-link">linkedin.com/in/anand-shakya-a42053304</span>
+                </div>
+                <div class="channel-action">
+                  <span class="btn btn-outline btn-sm">Connect</span>
+                </div>
+              </a>
+
+              <!-- GitHub Card -->
+              <a href="https://github.com/anandshakya285" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+                <div class="channel-icon-box channel-github">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">Source Code &amp; Repositories</span>
+                  <span class="channel-title">GitHub Profile</span>
+                  <span class="channel-link">github.com/anandshakya285</span>
+                </div>
+                <div class="channel-action">
+                  <span class="btn btn-outline btn-sm">Follow</span>
+                </div>
+              </a>
+
+              <!-- Location Info Box -->
+              <div class="contact-channel-card location-card">
+                <div class="channel-icon-box channel-location">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">Base Location</span>
+                  <span class="channel-title">India</span>
+                  <span class="channel-link">Open to Remote &amp; On-Site Internships</span>
+                </div>
+                <div class="channel-action">
+                  <span class="status-pill status-pill-sm">
+                    <span class="status-indicator-dot"></span>
+                    Available
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Inquiry Copy Helper -->
+            <div class="inquiry-helper-card">
+              <div class="inquiry-header">
+                <div>
+                  <h4 class="inquiry-title">Quick Outreach Template</h4>
+                  <p class="inquiry-sub">Recruiters and collaborators can copy this ready message to reach out on LinkedIn:</p>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm" id="copy-message-btn" onclick="copyOutreachMessage()">
+                  <svg id="copy-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span id="copy-btn-text">Copy Outreach Message</span>
+                </button>
+              </div>
+              <pre class="inquiry-box" id="outreach-template">Hi Anand, I came across your portfolio highlighting your B.Tech CSE (Data Science) studies at Maharishi University of Information Technology and your work on Ojas Apparels and the Student Management System. We'd like to discuss internship opportunities with you.</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- WORKFLOW ARCHITECTURE MODAL -->
+  <div class="modal-overlay" id="workflow-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-badge" id="modal-badge">Architecture Overview</span>
+          <h3 class="modal-title" id="modal-title">Project Architecture</h3>
+        </div>
+        <button type="button" class="modal-close-btn" aria-label="Close modal" onclick="closeWorkflowModal()">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Dynamic Content Injected via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p class="footer-copy">
+          &copy; <span id="current-year">2026</span> Anand Shakya • Computer Science &amp; Data Science Student
+        </p>
+        <p class="footer-subtext">
+          Maharishi University of Information Technology • Expected Graduation: 2028
+        </p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-socials">
+          <a href="https://github.com/anandshakya285" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="GitHub Profile">
+            GitHub
+          </a>
+          <span class="footer-dot">•</span>
+          <a href="https://www.linkedin.com/in/anand-shakya-a42053304/" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="LinkedIn Profile">
+            LinkedIn
+          </a>
+          <span class="footer-dot">•</span>
+          <a href="#hero" class="footer-link back-to-top">
+            Back to Top ↑
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
